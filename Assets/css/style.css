@@ -1,17 +1,27 @@
 /*global*/
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
 h1{
 	font-family: 'Playfair Display', serif;
-	font-size: 4em;
+	font-size: 3.5em;
+}
+h2{
+	font-family: 'Playfair Display', serif;
+}
+h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.8em;
+	color: #707070;
 }
 p{
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
 	color: #707070;
 	font-size: 0.9em;
-	line-height: 2;
-	padding-top: 20px;
 }
-@media (max-width: 480px){
+@media (max-width: 768px){
 	h1{
 		font-size: 3em;
 		padding: 20px;
@@ -54,10 +64,12 @@ p{
 }
 .header h1{
 	color: white;
+	font-style: italic;
+	font-weight: 900;
 	width: 500px;
 	max-width: 100%;
 	margin: 0px auto;
-	letter-spacing: 1px;
+	letter-spacing: 2 px;
 	padding-top: 200px;
 }
 .header .header_arrow{
@@ -66,11 +78,13 @@ p{
 	padding-top: 200px;
 
 }
-@media (max-width: 480px){
+@media (max-width: 768px){
 	.header .header_arrow{
 		padding-top: 170px;
 	}
 }
+
+/*POST*/
 .post{
 	width: 600px;
 	max-width: 100%;
@@ -80,7 +94,7 @@ p{
 .fecha_calendar{
 	font-size: 1em;
 	float: left;
-	padding: 8px;
+	padding: 0px 5px 0px 5px;
 
 }
 .fecha h5{
@@ -88,8 +102,23 @@ p{
 	font-size: 0.8em;
 	color: #707070;
 }
+.post p{
+	line-height: 2;
+	padding-top: 20px;
+}
+@media (max-width: 768px){
+	.post{
+		max-width: 80%;
+	}
+}
 
 /*share*/
+.share{
+	padding-top: 20px;
+}
+.share .icons{
+	float: left;
+}
 .share .share_heart{
 	color: white;
 	font-size: 1.6em;
@@ -110,4 +139,113 @@ p{
 }
 .share .share_icon:hover{
 	background-color: blue;
+}
+.share .comment{
+	background-color: gray;
+	border-radius: 30px;
+	float: left;
+	margin-left: 10px;
+	width: 170px;
+	height: 38px;
+}
+.share .comment .comment_icon{
+	color: white;
+	font-size: 1.6em;
+	padding: 8px 8px 8px 15px;
+	float: left;
+}
+.share .comment p{
+	color: white;
+	padding: 11px;
+	font-size: 0.8em;
+}
+
+/*Autor*/
+.autor{
+	position: relative;
+	margin-top: 50px;
+}
+.autor .line{
+	border-top: 1px solid #D2D2D2;
+	width: 100%;
+}
+.autor .autor_icon{
+	position: absolute;
+	top:-20px;
+	padding-left: 47%;
+}
+.autor .autor_icon .user_icon{
+	border: solid 1px #a5a5a5;
+	color: #a5a5a5;
+	background-color: #ffffff;
+	border-radius: 30px;
+	padding: 10px;
+}
+.autor .autor_container{
+	width: 650px;
+	max-width: 100%;
+	margin-top: 30px;
+}
+.autor .container .autor_img{
+	width: 130px;
+	float: left;
+	margin: 0px 20px 0px 0px;
+}
+.autor h2{
+	font-size: 1em;
+	font-weight: bold;
+	font-style: italic;
+	padding-bottom: 10px;
+	padding-top: 15%;
+}
+.autor .autor_container h3{
+	padding-bottom: 5px;
+}
+.autor .autor_container p{
+	font-size: 0.75em;
+	padding-top: 30px;
+}
+@media (max-width: 768px){
+	.autor .autor_container{
+		text-align: center;
+	}
+	.autor .container .autor_img{
+		margin: 0 auto;
+		float: none;
+	}
+	.autor h2{
+		font-size: 2em;
+		padding-top: 5%;
+	}
+	.autor .autor_container h3{
+		font-size: 1.1em;
+		font-weight: lighter;
+		padding-bottom: 10px;
+	}
+}
+
+/*OTROS_POST*/
+.otros_post{
+	margin-top: 30px;
+	text-align: center;
+}
+.otros_post .jumbotron .post_container{
+	width: 600px;
+}
+.post_container h3{
+	display: inline;
+	font-size: 1.1em;
+	padding: 5px;
+}
+.post_container .icon_arrow{
+	color: #ffffff;
+	font-size: 1.5em;
+	background-color: #707070;
+	padding: 5px 12px;
+	border-radius: 20px;
+}
+@media (max-width: 768px){
+	.otros_post .jumbotron .post_container{
+		margin: 0 auto;
+	}	
 }
