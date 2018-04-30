@@ -35,6 +35,9 @@ p{
 	border: none;
 	margin: 0px;
 }
+.my_navbar .my_navbar_logo{
+	max-width: 50px;
+}
 .my_navbar a{
 	color: white;
 }
@@ -127,7 +130,7 @@ p{
 	padding: 8px;
 }
 .share .share_heart:hover{
-	background-color: red;
+	background-color: #d56c6a;
 }
 .share .share_icon{
 	color: white;
