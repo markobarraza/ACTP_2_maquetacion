@@ -46,10 +46,10 @@ p{
 	color: white;
 	font-size: 25px;
 }
-.navbar-collapse.in{
-	background-color: #F2F2F2;
+/*HOVER NAV*/
+.nav>li>a:hover{
+	background-color: #323333; 
 }
-
 /* Header */
 .container-fluid{
 	background-color: black;
@@ -229,6 +229,10 @@ p{
 	margin-top: 30px;
 	text-align: center;
 }
+.otros_post .jumbotron{
+	
+	margin: 0;
+}
 .otros_post .jumbotron .post_container{
 	width: 600px;
 }
@@ -248,4 +252,15 @@ p{
 	.otros_post .jumbotron .post_container{
 		margin: 0 auto;
 	}	
+}
+
+/*FOOTER*/
+.footer{
+	width: 100%;
+	background-color: #12161a;
+	text-align: center;
+	padding: 50px 0px;
+}
+.footer .footer_logo{
+	max-width: 90px;
 }
